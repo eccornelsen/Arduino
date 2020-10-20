@@ -51,7 +51,7 @@ void loop() {
   Serial.println(temp_volts);
 
   //Temperature calculation
-  temp_deg = (temp_volts - 0.5)*100; //750mV @ 25degC 
+  temp_deg = 100*temp_volts -50; //750mV @ 25degC 
   Serial.println(temp_deg);
   delay(1000);
 }
